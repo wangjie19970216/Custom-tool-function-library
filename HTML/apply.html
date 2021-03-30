@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../apply.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        // 定义一个函数
+
+        function add(a, b) {
+            console.log(this);
+            return a + b + this.c;
+        };
+        // 定义一个对象
+        let obj = {
+            c: 521
+        };
+        // 定义一个全局变量
+        window.c = 1314;
+        // 调用apply函数
+        console.log(apply(add, obj, [10, 20]));
+        console.log(apply(add, null, [30, 40]));
+
+    </script>
+</body>
+
+</html>

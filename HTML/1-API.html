@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../declares.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        // const arr = [1, 2, 3, 4, 5, 1024];
+
+        // map函数调用
+        // const result = map(arr, (item, index) => {
+        //     console.log(index);
+        //     return item * 10;
+        // });
+        // console.log(result);
+
+        // reduce函数调用
+        // let result = reduce(arr, (res, value) => {
+        //     return res + value;
+        // }, 10);
+
+        // // 输出结果
+        // console.log(result);
+
+        // 调用 filter
+        // // const result = arr.filter(item => item % 2 == 1);
+
+        // const result = filter(arr, item => item % 2 == 1);
+
+        // console.log(result);
+
+        // 调用 find
+        // const result = arr.find(item => {
+        //     return item > 1000;
+        // });
+
+        // const result = find(arr, item => {
+        //     return item > 1000;
+        // });
+        // console.log(result);
+
+        // 调用 find
+        // const result = arr.find(item => {
+        //     return item > 1000;
+        // });
+
+        // const result = findIndex(arr, item => {
+        //     return item > 1000;
+        // });
+        // console.log(result);
+
+        const arr = [1, 2, 3, 4, 5, 1024, 2007];
+
+        // const result = every(arr, (item, index) => {
+        //     return item > 0;
+        // })
+
+        const result = some(arr, (item, index) => {
+            return item > 10000;
+        })
+
+        console.log(result);
+    </script>
+</body>
+
+</html>
